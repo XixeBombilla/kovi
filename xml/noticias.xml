@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<noticias>
+    
+  <!--<noticia>-->
+    
+    <!--<contenido>Contenido de la Noticia</contenido>-->
+    <!--<imagen>imgNoticias/01.jpg</imagen>-->
+    
+  <!--</noticia>-->
+  
+  <noticia>
+    
+    <contenido></contenido>
+    <imagen></imagen>
+    
+  </noticia>
+  
+</noticias>
+

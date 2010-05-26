@@ -1,0 +1,262 @@
+body {
+    
+    background-color: #999999;
+    font-family: Times, serif;
+	font-style: normal;
+	font-weight: 100;
+}
+
+a:link {
+  
+  color:#FFF;
+  text-decoration: none;
+}
+
+a:hover{
+  
+  color:#333;
+}
+
+a:visited{
+  color:#fff;
+   text-decoration: none;
+}
+
+#contenedorGeneral{
+    
+    background-color: #999999;
+     width: 1000px;
+    height: 720px;
+    margin-left: auto;
+    margin-right:auto;
+    color:#fff;
+    padding-top:12px;
+    
+}
+
+#cabexa{
+    
+   
+    margin-right: 10px;
+     margin-left: -10px;
+    height: 100px;
+ width: 1015px;
+    margin-top:-520px;
+    position:absolute;
+ background-color: #999999;
+    z-index:2;
+
+}
+
+
+#lineaBLL{ width: 1010px; background-color:#fff; height:2px;}
+#lineaBL{ width: 1035px; background-color:#fff; height:2px;}
+#lineaBC{ width: 260px; background-color:#fff; height:2px;}
+#lineaGC{ width: 240px; background-color:#999999; height:2px;}
+
+#galeria{
+    
+    margin-right: 15px;
+     margin-left: 20px;
+     margin-top: 0px;
+     width:960px;
+     position:absolute;
+     z-index:0;
+    
+}
+#galeria1{
+    
+    margin-right: 15px;
+     margin-left: 20px;
+     margin-top: 0px;
+     width:960px;
+     position:absolute;
+     z-index:1;
+    
+}
+
+#menuQ{
+    
+   float:left;
+   height:390px;
+   width:300px;
+   background-image: url(../img/cuadroN.png);
+   z-index:10;
+   text-align:center;
+   color:#fff;
+}
+
+#menuConoce{
+    
+   float:left;
+   height:390px;
+   width:300px;
+   background-image: url(../img/cuadroN.png);
+   z-index:10;
+   text-align:center;
+   color:#fff;
+}
+
+
+#parrafoConoce1{
+    
+    height:70px;
+   width:260px;
+   text-align:left;
+   margin-left:20px;
+   margin-top:10px;
+   margin-bottom:10px;
+    
+}
+
+#parrafoConoce2{
+    
+    height:70px;
+   width:260px;
+   text-align:left;
+   margin-left:20px;
+   margin-top:10px;
+   margin-bottom:10px;
+    
+}
+
+#parrafoConoce3{
+    
+    height:70px;
+   width:260px;
+   text-align:left;
+   margin-left:20px;
+   margin-top:10px;
+   margin-bottom:10px;
+    
+}
+#parrafoConoce4{
+    
+    height:70px;
+   width:260px;
+   text-align:left;
+   margin-left:20px;
+   margin-top:10px;
+   margin-bottom:10px;
+    
+}
+#parrafoConoce5{
+    
+    height:70px;
+   width:260px;
+   text-align:left;
+   margin-left:20px;
+   margin-top:10px;
+   margin-bottom:10px;
+    
+}
+#parrafoConoce6{
+    
+    height:70px;
+   width:260px;
+   text-align:left;
+   margin-left:20px;
+   margin-top:10px;
+   margin-bottom:10px;
+    
+}
+#parrafoConoce7{
+    
+    height:70px;
+   width:260px;
+   text-align:left;
+   margin-left:20px;
+   margin-top:10px;
+   margin-bottom:10px;
+    
+}
+
+
+#menuDesa{
+    
+   float:left;
+   height:390px;
+   width:300px;
+   background-image: url(../img/cuadroN.png);
+   z-index:10;
+   text-align:center;
+   color:#fff;
+}
+#menuComo{
+    
+   float:left;
+   height:390px;
+   width:300px;
+   background-image: url(../img/cuadroN.png);
+   z-index:10;
+   text-align:center;
+   color:#fff;
+}
+
+#menuContacto{
+    
+   float:left;
+   height:390px;
+   width:300px;
+   background-image: url(../img/cuadroN.png);
+   z-index:10;
+   text-align:center;
+   color:#fff;
+   
+}
+
+.bMenu:hover{ color: #333333;}
+.cMenu:hover{ color: #999999;}
+
+.bMenu{
+        color: #fff;
+	float:left;
+	cursor:pointer;
+	text-align:center ;
+	font-size:11pt;
+}
+
+#pie{
+     margin-right: 10px;
+    margin-left: 20px;
+    height: 105px;
+     
+     position:absolute;
+}
+
+
+
+
+#info{
+    
+    background-color: #666666;
+     border: solid #FFF thin;
+    height: 115px;
+    width: 350px;
+    float:left;
+    position:absolute;
+    text-align:center;
+    color:#fff;
+}
+
+#n1{
+    
+    background-color: #666666;
+     border: solid #FFF thin;
+    height: 115px;
+    float:left;
+    width: 305px;
+    position:absolute;
+    margin-left: 348px;
+}
+
+#n2{
+    
+    background-color: #666666;
+     border: solid #FFF thin;
+    height: 115px;
+    float:left;
+    width: 305px;
+    position:absolute;
+    margin-left: 655px;
+}

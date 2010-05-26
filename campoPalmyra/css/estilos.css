@@ -1,0 +1,408 @@
+body {
+    
+    background-color: #000;
+     font-family: "GillSans-Light", sans-serif;
+    font-style: normal;
+	font-weight: 100;
+}
+
+
+a:link {
+  
+  color:#FFF;
+  text-decoration: none;
+}
+
+a:hover{
+  
+  color:#FFCC33;
+}
+
+a:visited{
+  color:#fff;
+   text-decoration: none;
+}
+
+#contenedorGeneral{
+    
+    background-color: #000;
+     width: 1000px;
+    height: 700px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:10px;
+    
+}
+
+#head{
+    
+   
+    margin-right: 10px;
+     margin-left: 10px;
+    height: 408px;
+    position:absolute;
+    width:978px;
+
+}
+
+#galeria{
+    
+    height: 408px;
+    position:absolute;
+    width:978px;
+
+}
+
+#galeria7{
+    
+    height: 408px;
+    position:absolute;
+    width:978px;
+    margin-top:-408px;
+
+}
+#galeria2{
+    
+    height: 408px;
+    position:absolute;
+    width:978px;
+    margin-top:-408px;
+
+}
+#galeria3{
+    
+    height: 408px;
+    position:absolute;
+    width:978px;
+    margin-top:-408px;
+
+}
+#galeria4{
+    
+    height: 408px;
+    position:absolute;
+    width:978px;
+    margin-top:-408px;
+
+}
+#galeria5{
+    
+    height: 408px;
+    position:absolute;
+    width:978px;
+    margin-top:-408px;
+
+}
+#galeria6{
+    
+    height: 408px;
+    position:absolute;
+    width:978px;
+    margin-top:-408px;
+}
+
+#logo{
+    
+    position:absolute;
+    width:200px;
+    height:66px;
+    background-image:url(../img/fondoG.png);
+    margin-top:10px;
+    z-index:10;
+    
+}
+
+#menu{
+    
+   float:right;
+   height:40px;
+   width:978px;
+   margin-top: 368px;
+   background-image:url(../img/fondoG.png);
+   position:absolute;
+    z-index:10;
+    
+}
+
+#pie{
+    
+    margin-left: 10px;
+    height:246px;
+    width:978px;
+    position:absolute;
+    background-image:url(../img/fondoA.png);
+}
+
+ul#barra li{
+    overflow:hidden;
+    height:40px;
+    float:left;
+    margin-top:-16px;
+    list-style:none;
+    
+    
+}
+
+ul#barra a, ul#barra span{
+    padding:10px 10px;
+    float:left;
+    text-decoration: none;
+    color:#fff;
+    clear:both;
+    line-height:20px;
+}
+
+ul#barra a{
+    color: #FFCC33;
+		}
+
+
+li{list-style:disc; color: #FFCC33;}
+
+#titulos{
+    
+    background-color: #cccccc;
+    height: 32px;
+     margin-top:397px;
+      width:978px;
+      margin-left: 10px;
+     
+}
+
+#infoCarac{
+    
+    height:246px;
+    width:958px;
+    margin-left:10px;
+    
+    
+}
+
+#infoCasas{
+    
+    height:246px;
+    width:958px;
+    margin-left:10px;
+    
+    
+}
+
+#infoUbi{
+    
+    height:246px;
+    width:958px;
+    margin-left:10px;
+    
+    
+}
+
+#infoGaleria{
+    
+    height:246px;
+    width:958px;
+    margin-left:10px;
+    
+    
+}
+
+#infoVideo{
+    
+    height:246px;
+    width:958px;
+    margin-left:10px;
+    
+    
+}
+
+#infoContacto{
+    
+    height:246px;
+    width:958px;
+    margin-left:10px;
+    
+    
+}
+
+#inicioInfo{
+    
+    height:246px;
+    width:958px;
+    margin-left:10px;
+    
+    
+}
+#titulo{ opacity:0; }
+
+#ubica{
+    
+    height: 220px;
+     width:220px;
+    float:left;
+}
+
+#casaPenasco{
+    
+    background-image:url(../img/fondoCN.png);
+    width:440px;
+    height: 215px;
+    position:absolute;
+    margin-left:200px;
+    font-style: italic;
+    font-size:9pt;
+}
+
+#casaLaja{
+    
+    background-image:url(../img/fondoCN.png);
+    width:440px;
+    height: 215px;
+    position:absolute;
+    margin-left:200px;
+    font-style: italic;
+    font-size:9pt;
+}
+
+#casaRisco{
+    
+    background-image:url(../img/fondoCN.png);
+    width:440px;
+    height: 215px;
+    position:absolute;
+    margin-left:200px;
+    font-style: italic;
+    font-size:9pt;
+}
+
+#casaManantial2{
+    
+    background-image:url(../img/fondoCN.png);
+    width:440px;
+    height: 215px;
+    position:absolute;
+    margin-left:200px;
+    font-style: italic;
+    font-size:9pt;
+}
+
+#casaManantial{
+    
+    background-image:url(../img/fondoCN.png);
+    width:440px;
+    height: 215px;
+    position:absolute;
+    margin-left:200px;
+    font-style: italic;
+    font-size:9pt;
+}
+
+#casaCanada{
+    
+    background-image:url(../img/fondoCN.png);
+    width:440px;
+    height: 215px;
+    position:absolute;
+    margin-left:200px;
+    font-style: italic;
+    font-size:9pt;
+}
+
+
+.info1{
+    
+     height:246px;
+    width:270px;
+    font-size:10pt;
+    color:#FFF;
+    position:absolute;
+    
+}
+.inicio1{
+    
+     height:246px;
+    width:270px;
+    font-size:10pt;
+    color:#FFF;
+    position:absolute;
+    text-align:center;
+    font-size:12pt;
+    
+}
+.inicio2{
+    
+     height:246px;
+    width:300px;
+    font-size:10pt;
+    color:#FFF;
+    position:absolute;
+    margin-left:310px;
+      text-align:center;
+      font-size:14pt;
+    
+}
+
+.inicio3{
+    
+     height:246px;
+    width:270px;
+    font-size:10pt;
+    color:#FFF;
+    position:absolute;
+    margin-left:650px;
+      text-align:center;
+      font-size:12pt;
+    
+}
+
+.c1{
+    
+     height:246px;
+    width:270px;
+    font-size:10pt;
+    color:#FFF;
+    position:absolute;
+    text-align:left;
+    
+}
+.c2{
+    
+     height:246px;
+    width:300px;
+    font-size:10pt;
+    color:#FFF;
+    position:absolute;
+    margin-left:310px;
+      text-align:left;
+    
+}
+
+.c3{
+    
+     height:246px;
+    width:270px;
+    font-size:10pt;
+    color:#FFF;
+    position:absolute;
+    margin-left:650px;
+      text-align:left;
+    
+}
+.info2{
+    
+     height:246px;
+    width:480px;
+    font-size:10pt;
+    margin-left:300px;
+     color:#FFF;
+     position: absolute;
+}
+
+#fotos{
+
+    margin:auto;
+
+    
+}
+
+#fotos ul{margin:0; padding:0; margin-top:30px;}
+
+#fotos li{float:left;background-color:#FFCC33; width:87px; height:52px; list-style:none;}

@@ -1,0 +1,264 @@
+
+body {
+    
+    background-color: #CCCCCC;
+     font-family: "GillSans-Light", sans-serif;
+    font-style: normal;
+	font-weight: 100;
+}
+
+a:link {
+  
+  color:#FFF;
+  text-decoration: none;
+}
+
+a:hover{
+  
+  color:#FFCC33;
+}
+
+a:visited{
+  color:#fff;
+   text-decoration: none;
+}
+
+#contenedorGeneral{
+    
+    
+     width: 1000px;
+    height: 700px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:10px;
+    
+    
+}
+
+#head{
+    
+
+    margin-right: 10px;
+     margin-left: 10px;
+    height: 680px;
+    width:685px;
+    position:absolute;
+}
+
+#textoInfoInicio{
+    
+     height: 585px;
+     margin-left:15px;
+     margin-top: 15px;
+    width:252px;
+    position:absolute;
+    text-align:center;
+    color: #FFF;
+}
+#textoInfoCarac{
+   
+     height: 585px;
+     margin-left:15px;
+     margin-top: 15px;
+    width:252px;
+    position:absolute;
+    text-align:left;
+    color: #FFF;
+}
+#textoInfoCasas{
+   
+     height: 585px;
+     margin-left:15px;
+     margin-top: 15px;
+    width:252px;
+    position:absolute;
+    text-align:left;
+    color: #FFF;
+}
+
+#textoInfoUbi{
+   
+     height: 585px;
+     width:252px;
+     margin-left:15px;
+     margin-top: 15px;
+    
+    position:absolute;
+    text-align:left;
+    color: #FFF;
+}
+
+#textoInfoGaleria{
+   
+     height: 585px;
+     width:252px;
+     margin-left:15px;
+     margin-top: 15px;
+    
+    position:absolute;
+    text-align:left;
+    color: #FFF;
+}
+
+#textoInfoVideo{
+   
+     height: 585px;
+     width:252px;
+     margin-left:15px;
+     margin-top: 15px;
+    
+    position:absolute;
+    text-align:left;
+    color: #FFF;
+}
+#textoInfoContacto{
+   
+     height: 585px;
+     width:252px;
+     margin-left:15px;
+     margin-top: 15px;
+    
+    position:absolute;
+    text-align:left;
+    color: #FFF;
+}
+
+#galeria{
+    
+        height: 680px;
+    width:685px;
+    position:absolute;
+  
+}
+
+#galeria2{
+    
+        height: 680px;
+    width:685px;
+    position:absolute;
+    margin-top:-680px;
+    
+}
+#galeria3{
+    
+        height: 680px;
+    width:685px;
+    position:absolute;
+    margin-top:-680px;
+}
+#galeria4{
+    
+        height: 680px;
+    width:685px;
+    position:absolute;
+     background-image:url(../CasasCampoF/Agave.jpg);
+     margin-top:-680px;
+}
+
+#infoNegroC{
+    
+        height: 430px;
+    width:233px;
+    position:absolute;
+    margin-left:442px;
+    margin-top:10px;
+    z-index:4;
+    background-image:url(../img/fondoCuadroN.png);
+    font-style: italic;
+}
+
+#infoNegroM{
+    
+        height: 430px;
+    width:233px;
+    position:absolute;
+    margin-left:442px;
+    margin-top:10px;
+    z-index:4;
+    background-image:url(../img/fondoCuadroN.png);
+       font-style: italic;
+}
+
+#infoNegroA{
+    
+        height: 430px;
+    width:233px;
+    position:absolute;
+    margin-left:442px;
+    margin-top:10px;
+    z-index:4;
+    background-image:url(../img/fondoCuadroN.png);
+       font-style: italic;
+}
+
+#menu{
+    
+   float:right;
+   height:40px;
+   width:685px;
+   margin-top: 620px;
+    background-image:url(../img/fondoN.png);
+    position:absolute;
+ z-index:10;
+    
+}
+#lineaBlanca{background-color: #FFF;  width:252px; height:1px; opacity:0.7;}
+#lineaBlancaCorta{background-color: #FFF;  width:200px; height:1px; opacity:0.7;}
+
+
+ul#barra li{
+    overflow:hidden;
+    height:40px;
+    float:left;
+    margin-top:-16px;
+    list-style:none;
+    
+    
+}
+
+ul#barra a, ul#barra span{
+    padding:10px 10px;
+    float:left;
+    text-decoration: none;
+    color:#fff;
+    clear:both;
+    line-height:20px;
+}
+
+ul#barra a{
+    color: #FFCC33;
+		}
+
+li{list-style:disc; color: #FFCC33;}
+
+
+#contenido{
+    
+    height: 680px;
+    float:right;
+    margin-left:705px;;
+    margin-top:-10px;
+    width:285px;
+    background-image:url(../img/fondoInfo.png);
+    position:absolute;
+}
+
+#ubica3{
+    
+    height: 250px;
+     width:250px;
+    margin:auto;
+}
+
+#fotos{
+    
+    height: 410px;
+     width:250px;
+    margin:auto;
+
+    
+}
+
+#fotos ul{margin:0; padding:0;}
+
+#fotos li{float:left;background-color:#FFCC33; width:80px; height:50px; list-style:none;}

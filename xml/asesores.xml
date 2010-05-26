@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asesores>
+    
+  <!--<asesor>-->
+    
+    <!--<imagen>imgAsesores/01.jpg</imagen>-->
+    <!--<nombre>Jorge Lopez</nombre>-->
+    <!--<tel>Tel: 736 39 28</tel>-->
+    <!--<cel>cel: (477) 7 36 73 28</cel>-->
+    <!--<id>ID: 52*3242*234</id>-->
+    <!--<puesto>Asesor KOVI</puesto>-->
+    
+  <!--</asesor>-->
+  
+    <asesor>
+    
+    <imagen></imagen>
+    <nombre></nombre>
+    <tel></tel>
+    <cel></cel>
+    <id></id>
+    <puesto></puesto>
+    
+  </asesor>
+  
+</asesores>
+

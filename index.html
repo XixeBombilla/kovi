@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>.::Kovien ::.</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="favico.png">
+    <link rel="stylesheet" href="css/jScrollPane.css" type="text/css" media="screen" charset="utf-8" />
+    <!--<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js">
+</script>--> 
+    <script type='text/javascript' src='js/jquery-1.4.2.min.js'></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/jqFancyTransitions.js"></script>
+	<script src="js/jquery.fadeSliderToggle.js" type="text/javascript"></script>
+	
+     <script type="text/javascript" src="js/jScrollPane.js"></script>
+     <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+     
+     <script type="text/javascript">
+    var xmlDocN;
+    var xmlDocA;
+    if (window.XMLHttpRequest)
+      {
+      xhttpN=new XMLHttpRequest();
+      xhttpA=new XMLHttpRequest();
+      }
+    else // Internet Explorer 5/6
+      {
+      xhttpN=new ActiveXObject("Microsoft.XMLHTTP");
+      xhttpA=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+    xhttpN.open("GET","xml/noticias.xml",false);
+    xhttpN.send("");
+    xmlDocN=xhttpN.responseXML;
+    xhttpA.open("GET","xml/asesores.xml",false);
+    xhttpA.send("");
+    xmlDocA=xhttpA.responseXML;
+    
+    var x=xmlDocN.getElementsByTagName("noticia");
+    i=0;
+    
+    var y=xmlDocA.getElementsByTagName("asesor");
+    a=0;
+    
+    
+    function display()
+    {
+    
+    nota=(x[i].getElementsByTagName("contenido")[0].childNodes[0].nodeValue);
+    imgN=(x[i].getElementsByTagName("imagen")[0].childNodes[0].nodeValue);
+    txtN1= nota ;
+    txtN= '<img src="'+ imgN +'"/>' ;
+    document.getElementById("imagenNoticia").innerHTML=txtN;
+    document.getElementById("textoNoticia").innerHTML=txtN1;
+    
+     nombre=(y[a].getElementsByTagName("nombre")[0].childNodes[0].nodeValue);
+     tel=(y[a].getElementsByTagName("tel")[0].childNodes[0].nodeValue);
+     cel=(y[a].getElementsByTagName("cel")[0].childNodes[0].nodeValue);
+     id=(y[a].getElementsByTagName("id")[0].childNodes[0].nodeValue);
+     puesto=(y[a].getElementsByTagName("puesto")[0].childNodes[0].nodeValue);
+    imgA=(y[a].getElementsByTagName("imagen")[0].childNodes[0].nodeValue);
+    txtA1= nombre +"<br/>"+ tel +"<br/>"+ cel +"<br/>"+ id +"<br/>"+ puesto;
+    txtA= '<img src="'+ imgA +'"/>' ;
+    document.getElementById("imagenAsesor").innerHTML=txtA;
+    document.getElementById("textoAsesor").innerHTML=txtA1;
+    
+    }
+</script>
+     
+     
+</head>
+<body onload="display()">
+
+    <div id="contenedorGeneral">
+        <br/>
+	<div>
+		    <img src="img/lineaHL.png" style="float:left; margin-top:-20px; margin-left:18px; position:absolute;"/>
+		    <div id="lineaBLL" style="margin-left:-2px; margin-top:-2px; position:absolute; float:left;"></div>
+		    <div id="lineaBLL" style="margin-left:-2px;  margin-top:670px; position:absolute;"></div>
+		   <img src="img/lineaHL.png" style="float:left;  margin-left:980px; margin-top:-20px; position:absolute;"/>
+	</div>
+	    
+	<div>
+	    <div id="galeria1" style="display:none;" ></div>
+	    <div id="galeria" >
+		
+		<img src="imgFondos/02.jpg"/>
+		<img src="imgFondos/04.jpg"/>
+		<img src="imgFondos/06.jpg"/>
+		<img src="imgFondos/07.jpg"/>
+		<img src="imgFondos/08.jpg"/>
+		<img src="imgFondos/09.jpg"/>
+		<img src="imgFondos/11.jpg"/>
+	    </div>
+	    
+	</div>
+	
+        <div id="pie">
+            
+            <div id="info">
+		<div style="margin-top:10px;">
+		<b>Informes:</b><br/>
+		Blvd. Alonso de Torres 750<br/>
+		Colonia La Alameda<br/>
+		Le&oacute;n Guanajuato, M&eacute;xico<br/>
+		tels. (477) 470.11.80 y 01.800.0872688
+		</div>
+	    </div>
+	    
+	    <div id="n1" >
+		
+		<div style="float:left;"><img src="img/noticias.png"/></div>
+		<div id="imagenNoticia" style=" width:100px; height:100px; float:left; margin-top:8px; margin-right:10px;"></div>
+		<div id="textoNoticia" style="font-size:10pt; color:#FFF; width:140px; height:100px; float:left; margin-top:8px;"></div>
+		
+	    </div>
+	    <div id="n2">
+		
+		<div style="float:left;"><img src="img/asesores.png"/></div>
+		<div id="imagenAsesor" style="width:100px; height:100px; float:left; margin-top:8px; margin-right:10px;"></div>
+		<div id="textoAsesor" style="font-size:10pt; color:#FFF; width:120px; height:100px; float:left; margin-top:8px;"></div>
+		
+	    </div>
+        
+        </div>
+	
+	<div id="cabexa" >
+		<div>
+		    <img src="img/lh.png" style="float:left; margin-top:-10px; position:absolute;"/>
+		    <img src="img/lh.png" style="float:left; margin-top:-10px; margin-left:5px; position:absolute;"/>
+		    <div id="lineaBL" style="margin-left:-10px; position:absolute; float:left;"></div>
+		    <div id="lineaBL" style="margin-left:-10px; margin-top:5px; position:absolute; float:left;"></div>
+		    <div id="lineaBL" style="margin-left:-10px;  margin-top:95px; position:absolute;"></div>
+		    <div id="lineaBL" style="margin-left:-10px; margin-top:100px; position:absolute;"></div>
+		   <img src="img/lh.png" style="float:left;  margin-left:1010px; margin-top:-10px; position:absolute;"/>
+		    <img src="img/lh.png" style="float:left;  margin-left:1015px; margin-top:-10px;   position:absolute;"/>
+		</div>
+		
+		<img id="inicio" src="img/logo.png" style="float:left; margin-left:10px; border:none; cursor:pointer;"/>
+	       
+		
+		<a class="bMenu" id="quienesM" style="margin-top:35px; margin-left:60px; float:left;">QUI&Eacute;NES<br/>SOMOS </a>
+		<a class="bMenu" id="conocenosM" style="margin-top:40px; margin-left:80px; float:left;">CON&Oacute;CENOS </a>
+		<a class="bMenu" id="desarrolloM" style="margin-top:40px; margin-left:80px; float:left;">DESARROLLOS</a>
+		<a class="bMenu" id="comoM" style="margin-top:35px; margin-left:80px; float:left;">COMO <br/>COMPRAR </a>
+		<a class="bMenu" id="contactoM"  style="margin-top:40px; margin-left:80px; float:left;">CONTACTO </a>
+		
+	<div>
+	    
+	    
+       <div id="menuQ" style="margin-left:-920px; margin-top:110px; display:none;">
+	    
+	    <p style="font-size:14pt; ">QUI&Eacute;NES SOMOS</p>
+	    <div id="lineaBC" style="margin-left:20px; margin-top:-20px;"></div>
+	    <p style="font-size:10pt;">
+		<a  class="cMenu" id="menuM" style="cursor:pointer;">Misi&oacute;n</a><br/><br/>
+		<a  class="cMenu" id="menuV" style="cursor:pointer;">Visi&oacute;n</a><br/><br/>
+		<a  class="cMenu" id="menuL" style="cursor:pointer;">Lema</a>
+	    </p>
+	    <div id="cuadroQuienes" style="display:none;">
+		<div id="lineaGC" style="margin-left:20px;"></div><br/>
+		<div><p id="parrafoQuienes" style="font-size:10pt;"></p></div>
+		<div id="lineaGC" style="margin-left:20px; margin-top:50px;"></div><br/>
+	    </div>
+	    		    
+	</div>
+       
+         <div id="menuConoce" style="margin-left:-920px; margin-top:110px; display:none;">
+	    
+	    <p style="font-size:14pt; ">CON&Oacute;CENOS</p>
+	    <div id="lineaBC" style="margin-left:20px; margin-top:-20px;"></div>
+	    <p>
+		<a id="conoce1"  class="cMenu" style="cursor:pointer; font-size:10pt;">M&uacute;date a tu casa el mismo d&iacute;a</a><br/>
+		<div id="conocep1" style="margin-left:10px; margin-bottom:10px; display:none;">
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    <div  id="parrafoConoce1" style="font-size:10pt;">
+			<p style="padding=0; margin-right:15px; ">
+			    Por que nosotros sabemos cuan importante es que tu casa cuente con los servicios necesarios
+			    en cuanto te mudes, te dejamos tu casa lista para que la habites y la goces a lado de tu familia.
+			</p>
+		    </div>
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    
+		</div>    
+		<a id="conoce2" class="cMenu" style="cursor:pointer; font-size:10pt;">Ambientes dise&ntilde;ados para tus hijos</a><br/><br/>
+		<div id="conocep2" style="margin-left:10px; margin-bottom:10px; display:none;">
+		    
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    <div  id="parrafoConoce2" style="font-size:10pt;">
+			<p style="padding=0; margin-right:15px;">
+			    Nuestros fraccionamientos est&aacute;n dise&ntilde;ados para el goce, la diversi&oacute;n y el crecimiento sano
+			    de tus hijos, lugares donde ellos pueden jugar, andar en bicicleta, correr y divertirse
+			    con sus amigos en un ambiente natural y completamente seguro en el que t&uacute; estar&aacute;s
+			    tranquila mientras tus hijos se divierten y hacen nuevos amigos.
+			</p>
+		    </div>
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    
+		</div>    
+		
+		<a id="conoce3" class="cMenu" style="cursor:pointer; font-size:10pt;">Construcci&oacute;n Tradicional</a><br/><br/>
+		<div id="conocep3" style="margin-left:10px; margin-bottom:10px; display:none;">
+		    
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    <div  id="parrafoConoce3" style="font-size:10pt;">
+			<p style="padding=0; margin-right:15px;">
+			   Inmobiliaria KOVI cuida siempre la calidad de tu casa. Las casas de nuestros fraccionamientos
+			   son construidas de la manera tradicional para brindarte la calidad, seguridad y estabilidad
+			   que tu y tu familia buscan al comprar una nueva casa. Hechas de tabique rojo cocido y con
+			   muros independientes, son casas que aparte de ser muy bellas en sus acabados exteriores,
+			   son fuertes y duraderas, un patrimonio para ti y para tus hijos.
+			</p>
+		    </div>
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    
+		</div>    
+		<a id="conoce4" class="cMenu" style="cursor:pointer; font-size:10pt;">Naturaleza en contacto contigo</a><br/><br/>
+		<div id="conocep4" style="margin-left:10px; margin-bottom:10px; display:none;">
+		    
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    <div  id="parrafoConoce4" style="font-size:10pt;">
+			<p style="padding=0; margin-right:15px;">
+			  Inmobiliaria KOVI no deja de lado la naturaleza y todos sus beneficios que &eacute;sta trae
+			  a tu hogar y tu familia, por lo que en nuestros desarrollos siempre cuidamos crear
+			  espacios donde tu y tus hijos puedan experimentar el estar en contacto con la
+			  naturaleza, la belleza de tener un lugar verde, limpio y saludable donde vivir.
+			</p>
+		    </div>
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    
+		</div>   
+		<a id="conoce5" class="cMenu" style="cursor:pointer; font-size:10pt;">Construimos para tu familia</a><br/><br/>
+		<div id="conocep5" style="margin-left:10px; margin-bottom:10px; display:none;">
+		    
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    <div  id="parrafoConoce5" style="font-size:10pt;">
+			<p style="padding=0; margin-right:15px;">
+			  Los fraccionamientos que Inmobiliaria KOVI te ofrece est&aacute;n dise&ntilde;ados y construidos pensando en ti
+			  y en tu familia, en las necesidades de cada uno ellos, desde &aacute;reas recreativas para tus hijos hasta
+			  &aacute;reas verdes en donde puedes invitar a tu familia a pasar una parrillada en contacto con la naturaleza
+			  con la tranquilidad de que tus hijos pueden estar jugando mientras tu y tus invitados disfrutan del lugar.
+			</p>
+		    </div>
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    
+		</div>   
+		<a id="conoce6" class="cMenu" style="cursor:pointer; font-size:10pt;">El lugar ideal para comenzar tu familia</a><br/><br/>
+		<div id="conocep6" style="margin-left:10px; margin-bottom:10px; display:none;">
+		    
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    <div  id="parrafoConoce6" style="font-size:10pt;">
+			<p style="padding=0; margin-right:15px;">
+			  Si estas pensando en comenzar una familia, los fraccionamientos que
+			  Inmobiliaria KOVI te ofrece son una excelente opci&oacute;n. Tu y tu familia
+			  sentir&aacute;n la paz de estar rodeados de ambientes naturales, tranquilos,
+			  seguros ya que nuestros fraccionamientos cuentan con pluma y control de entrada
+			  y salida de veh&iacute;culos, aire limpio y fresco, y casas de excelente calidad y dise&ntilde;o.
+			  Sin duda fraccionamientos en donde tu familia podr&aacute; comenzar con el pi&eacute; derecho y
+			  tu y tus hijos podr&aacute;n disfrutar de todos los beneficios que los fraccionamientos
+			  de KOVI les ofrecen. 
+			</p>
+		    </div>
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    
+		</div>  
+		<a id="conoce7" class="cMenu" style="cursor:pointer; font-size:10pt;">Acabados de primer nivel</a><br/><br/>
+		<div id="conocep7" style="margin-left:10px; margin-bottom:10px; display:none;">
+		    
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    <div  id="parrafoConoce7" style="font-size:10pt;">
+			<p style="padding=0; margin-right:15px;">
+			 Por que los detalles hacen la diferencia, Inmobiliaria KOVI te ofrece casas con acabados de primera
+			 calidad, que aportar&aacute;n el detalle y realce que tu casa merece, te ofrecemos aplanados de yeso
+			 y pintura vin&iacute;lica en interiores que har&aacute;n de tu casa tu hogar que tu y tu familia estaban buscando.
+			</p>
+		    </div>
+		    <div id="lineaGC" style="margin-left:20px;"></div>
+		    
+		</div>  
+	    </p>
+	    		    
+	</div>
+	 
+	 <div id="menuDesa" style="margin-left:-920px; margin-top:110px; display:none; ">
+	    
+	    <p style="font-size:14pt; ">DESARROLLOS</p>
+	    <div id="lineaBC" style="margin-left:20px; margin-top:-20px;"></div>
+	    <p style=" font-size:10pt;">
+		Da click sobre el fraccionamiento<br/>
+		y conoce más sobre éste
+
+	    </p>
+	    <div id="lineaGC" style="margin-left:30px;"></div><br/><br/>
+	    <a href="campoFuerte/index.html" target="_blank"> <img src="img/logoF.png" style="border:none;"/></a><br/><br/>
+	    <div id="lineaGC" style="margin-left:30px;"></div><br/><br/>
+	    <a href="campoPalmyra/index.html" target="_blank"><img src="img/logoP.png"  style="border:none;"/></a>
+	    
+	</div>
+	
+	 <div id="menuComo" style="margin-left:-920px; margin-top:110px; display:none;">
+	    
+	    <p style="font-size:14pt; ">C&Oacute;MO COMPRAR</p>
+	    <div id="lineaBC" style="margin-left:20px; margin-top:-20px;"></div>
+	    <p style=" font-size:10pt;">
+		Nosotros tramitamos tu cr&eacute;dito <br/>
+		SIN NINGUN COSTO
+
+	    </p>
+	    <div id="lineaGC" style="margin-left:30px; "></div>
+	    <p style=" font-size:10pt;">
+		Si tienes duda sobre los cr&eacute;ditos y cual<br/>
+		puedes usar para comprar tu casa, nosotros<br/>
+		te ayudamos y te orientamos. Ll&aacute;manos sin<br/>
+		ning&uacute;n compromiso o acude a nuestras<br/>
+		oficinas y te atenderemos con mucho gusto.
+	    </p>
+	    <div id="lineaGC" style="margin-left:30px;"></div>
+	    <img src="img/logitos.png"  style="border:none;"/>
+	    <div id="lineaGC" style="margin-left:30px;"></div>
+	    <p >&iexcl;Tramitamos todo tipo de cr&eacute;dito!</p>
+	    
+	</div>
+	
+	<div id="menuContacto" style="margin-left:-920px; margin-top:110px;  display:none;">
+	    
+	    <p style="font-size:14pt; ">CONTACTO</p>
+	    <div id="lineaBC" style="margin-left:20px; margin-top:-20px;"></div>
+	    <p style=" font-size:10pt;">
+		Ll&aacute;manos, vis&iacute;tanos o m&aacute;ndanos un mensaje.<br/>
+		Estamos a tus &oacute;rdenes.
+
+
+	    </p>
+	    <div id="lineaGC" style="margin-left:30px; "></div>
+	     <p style=" font-size:10pt; margin-top:5px;  margin-bottom:5px;">
+		Blvd. Alonso de Torres 750<br/>
+		Colonia La Alameda<br/>
+		Le&oacute;n Guanajuato, M&eacute;xico<br/>
+		tels. (477) 470.11.80 
+	    </p>
+	    <div id="lineaGC" style="margin-left:30px;"></div>
+	     <p style=" margin-top:5px;">
+		<form  name="contacto" method="post" action="enviar.php" >
+		<label style="margin-left:20px; font-size:9pt; float:right; ">Nombre:<input style="float:right; margin-right:20px;" name="nombre" type="text" id="nombre" size="20"/></label>
+			<label style="margin-left:20px; font-size:9pt; float:right; margin-top:2px;">Empresa:<input style="float:right; margin-right:20px;" name="empresa" type="text" id="empresa" size="20"/></label>
+			<label style="margin-left:20px; font-size:9pt; float:right; margin-top:2px;">E-mail:<input style="float:right; margin-right:20px;" name="mail" type="text" id="mail" size="20"/></label>
+			<label style="margin-left:20px; font-size:9pt; float:right; margin-top:2px;">Tel:<input style="float:right; margin-right:20px;" name="tel" type="text" id="tel" size="20"/></label>
+			<label style=" font-size:9pt; float:right; margin-top:1px;">Mensaje:<textarea style="float:right; margin-right:20px;" name="mensaje" cols="20" rows="4" id="mensaje"></textarea></label></p>
+		
+			<label style="position:absolute; font-size:9pt; margin-top:170px; margin-left:200px;"><input type="submit" name="Submit" value="Enviar"/></label>
+			
+		</form>
+	    </p>
+	   
+	    
+	</div>	
+	
+    </div>
+
+</body>
+</html>
