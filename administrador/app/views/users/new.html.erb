@@ -1,0 +1,24 @@
+<% title "Darse de Alta" %>
+
+<p>Ya tienes una Cuenta? <%= link_to "Log in", login_path %>.</p>
+
+<% form_for @user do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :Usuario %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :email, "Correo Electronico" %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :password,"Contrase&ntilde;a" %><br />
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    <%= f.label :password_confirmation, "Confirmar Correo" %><br />
+    <%= f.password_field :password_confirmation %>
+  </p>
+  <p><%= f.submit "Darse de Alta" %></p>
+<% end %>

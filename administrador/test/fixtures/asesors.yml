@@ -1,0 +1,13 @@
+one:
+  nombre: MyString
+  tel: MyString
+  cel: MyString
+  id: MyString
+  puesto: MyString
+
+two:
+  nombre: MyString
+  tel: MyString
+  cel: MyString
+  id: MyString
+  puesto: MyString

@@ -1,0 +1,8 @@
+<% form_for @noticia do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :contenido %><br />
+    <%= f.text_field :contenido %>
+  </p>
+  <p><%= f.submit:Aceptar %></p>
+<% end %>

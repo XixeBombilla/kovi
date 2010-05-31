@@ -1,0 +1,24 @@
+<% form_for @asesor do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label :telefono %><br />
+    <%= f.text_field :tel %>
+  </p>
+  <p>
+    <%= f.label :celular %><br />
+    <%= f.text_field :cel %>
+  </p>
+  <p>
+    <%= f.label :id, "id-Nextel" %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :puesto %><br />
+    <%= f.text_field :puesto %>
+  </p>
+  <p><%= f.submit :Aceptar %></p>
+<% end %>

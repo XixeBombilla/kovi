@@ -1,0 +1,19 @@
+<p><%= link_to "Administrador de Asesores", asesors_path %></p>
+<% title "Noticias" %>
+
+<table border=1; style="border:solid;">
+  <tr>
+    <th>Contenido</th>
+  </tr>
+  <% for noticia in @noticias %>
+    <tr>
+      <td><%=h noticia.contenido %></td>
+      <td><%= link_to "Mostrar", noticia %></td>
+      <td><%= link_to "Editar", edit_noticia_path(noticia) %></td>
+      <td><%= link_to "Eliminar", noticia, :confirm => 'Esta Seguro?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "Crear Nueva Noticia", new_noticia_path %></p>
+<p><%= link_to "Salir de Admin", logout_path %></p>

@@ -1,0 +1,12 @@
+<% title "Noticia" %>
+
+<p>
+  <strong>Contenido:</strong>
+  <%=h @noticia.contenido %>
+</p>
+
+<p>
+  <%= link_to "Editar", edit_noticia_path(@noticia) %> |
+  <%= link_to "Eliminar", @noticia, :confirm => 'Esta Seguro?', :method => :delete %> |
+  <%= link_to "Ver Todo", noticias_path %>
+</p>
