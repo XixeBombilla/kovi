@@ -1,5 +1,5 @@
 class AsesorsController < ApplicationController
-  before_filter :login_required
+  before_filter :login_required, :except => [:index]
   def index
     @asesors = Asesor.all
     respond_to do |wants|

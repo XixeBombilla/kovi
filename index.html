@@ -44,7 +44,7 @@
     a=0;
     
     
-    function display()
+    function displayN()
     {
     
     nota=(x[i].getElementsByTagName("contenido")[0].childNodes[0].nodeValue);
@@ -53,31 +53,79 @@
     txtN= '<img src="'+ imgN +'"/>' ;
     document.getElementById("imagenNoticia").innerHTML=txtN;
     document.getElementById("textoNoticia").innerHTML=txtN1;
+    }
     
-     nombre=(y[a].getElementsByTagName("nombre")[0].childNodes[0].nodeValue);
-     tel=(y[a].getElementsByTagName("tel")[0].childNodes[0].nodeValue);
-     cel=(y[a].getElementsByTagName("cel")[0].childNodes[0].nodeValue);
-     id=(y[a].getElementsByTagName("id")[0].childNodes[0].nodeValue);
-     puesto=(y[a].getElementsByTagName("puesto")[0].childNodes[0].nodeValue);
-    imgA=(y[a].getElementsByTagName("imagen")[0].childNodes[0].nodeValue);
+    function displayA()
+    {
+     nombre=(y[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue);
+     tel=(y[i].getElementsByTagName("tel")[0].childNodes[0].nodeValue);
+     cel=(y[i].getElementsByTagName("cel")[0].childNodes[0].nodeValue);
+     id=(y[i].getElementsByTagName("id")[0].childNodes[0].nodeValue);
+     puesto=(y[i].getElementsByTagName("puesto")[0].childNodes[0].nodeValue);
+    imgA=(y[i].getElementsByTagName("imagen")[0].childNodes[0].nodeValue);
     txtA1= nombre +"<br/>"+ tel +"<br/>"+ cel +"<br/>"+ id +"<br/>"+ puesto;
     txtA= '<img src="'+ imgA +'"/>' ;
     document.getElementById("imagenAsesor").innerHTML=txtA;
     document.getElementById("textoAsesor").innerHTML=txtA1;
     
     }
+    
+function nextN()
+{
+if (i<x.length-1)
+  {
+  i++;
+  displayN();
+  }
+}
+
+function previousN()
+{
+if (i>0)
+  {
+  i--;
+  displayN();
+  }
+}
+
+    
+function nextA()
+{
+if (i<y.length-1)
+  {
+  i++;
+  displayA();
+  }
+}
+
+function previousA()
+{
+if (i>0)
+  {
+  i--;
+  displayA();
+  }
+}
+
+function displayG()
+{
+
+    displayA();
+    displayN();
+  
+}
 </script>
      
      
 </head>
-<body onload="display()">
+<body onload="displayG()">
 
-    <div id="contenedorGeneral">
+    <div id="contenedorGeneral" >
         <br/>
 	<div>
 		    <img src="img/lineaHL.png" style="float:left; margin-top:-20px; margin-left:18px; position:absolute;"/>
 		    <div id="lineaBLL" style="margin-left:-2px; margin-top:-2px; position:absolute; float:left;"></div>
-		    <div id="lineaBLL" style="margin-left:-2px;  margin-top:670px; position:absolute;"></div>
+		    <div id="lineaBLL" style="margin-left:-2px;  margin-top:690px; position:absolute;"></div>
 		   <img src="img/lineaHL.png" style="float:left;  margin-left:980px; margin-top:-20px; position:absolute;"/>
 	</div>
 	    
@@ -114,12 +162,20 @@
 		<div id="imagenNoticia" style=" width:100px; height:100px; float:left; margin-top:8px; margin-right:10px;"></div>
 		<div id="textoNoticia" style="font-size:10pt; color:#FFF; width:140px; height:100px; float:left; margin-top:8px;"></div>
 		
+		<input id="flechaIzqN" style="float:left; margin-top:5px; cursor:pointer; margin-left:180px;" type="button" onclick="previousN()" value="<" />
+		<input id="flechaDerN" style="float:left; margin-top:5px; margin-left:10px; cursor:pointer;" type="button" onclick="nextN()" value=">" />
+		
+		
+		
 	    </div>
 	    <div id="n2">
 		
 		<div style="float:left;"><img src="img/asesores.png"/></div>
 		<div id="imagenAsesor" style="width:100px; height:100px; float:left; margin-top:8px; margin-right:10px;"></div>
 		<div id="textoAsesor" style="font-size:10pt; color:#FFF; width:120px; height:100px; float:left; margin-top:8px;"></div>
+		
+		<input id="flechaIzqA" style="float:left; margin-top:5px; cursor:pointer; margin-left:170px;" type="button" onclick="previousA()" value="<" />
+		<input id="flechaDerA" style="float:left; margin-top:5px; margin-left:10px; cursor:pointer;" type="button" onclick="nextA()" value=">" />
 		
 	    </div>
         

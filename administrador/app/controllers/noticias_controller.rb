@@ -1,5 +1,5 @@
 class NoticiasController < ApplicationController
-   before_filter :login_required
+   before_filter :login_required, :except => [:index]
   def index
     @noticias = Noticia.all
     respond_to do |wants|

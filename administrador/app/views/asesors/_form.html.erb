@@ -1,4 +1,4 @@
-<% form_for @asesor do |f| %>
+<% form_for(@asesor, :html => {:multipart => true}) do |f| %>
   <%= f.error_messages %>
   <p>
     <%= f.label :nombre %><br />
@@ -19,6 +19,10 @@
   <p>
     <%= f.label :puesto %><br />
     <%= f.text_field :puesto %>
+  </p>
+    <p>
+    <%= f.label "Imagen" %><br />
+    <%= f.file_field :imagen %>
   </p>
   <p><%= f.submit :Aceptar %></p>
 <% end %>

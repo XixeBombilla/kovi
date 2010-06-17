@@ -3364,3 +3364,1004 @@ Processing SessionsController#new (for 127.0.0.1 at 2010-05-29 13:51:29) [GET]
 Rendering template within layouts/application
 Rendering sessions/new
 Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-31 18:39:42) [GET]
+
+ActionController::RoutingError (No route matches "/seccions/3" with {:method=>:get}):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-05-31 18:39:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 18:39:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 18:39:51) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-31 18:40:02) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"eZL/F7SbelBwhXJ20yoWIzOUW6vacs2S0vX0ZIlbVS4=", "controller"=>"sessions", "login"=>"admin", "password"=>"[FILTERED]"}
+  [4;35;1mUser Columns (43.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 68ms (DB: 44) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-05-31 18:40:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mAsesor Load (1.4ms)[0m   [0;1mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;35;1mAsesor Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+Completed in 27ms (View: 12, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index (for 127.0.0.1 at 2010-05-31 18:40:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"noticias"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mNoticia Load (19.1ms)[0m   [0mSELECT * FROM `noticias` [0m
+Rendering template within layouts/application
+Rendering noticias/index
+  [4;36;1mNoticia Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `noticias`[0m
+Completed in 42ms (View: 11, DB: 22) | 200 OK [http://localhost/noticias]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-05-31 18:40:19) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-05-31 18:40:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 18:40:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-31 18:40:26) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"eZL/F7SbelBwhXJ20yoWIzOUW6vacs2S0vX0ZIlbVS4=", "controller"=>"sessions", "login"=>"admin", "password"=>"[FILTERED]"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 2) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-05-31 18:40:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mAsesor Load (0.2ms)[0m   [0;1mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;35;1mAsesor Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+Completed in 19ms (View: 7, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-05-31 18:40:35) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mAsesor Load (0.2ms)[0m   [0mSELECT * FROM `asesors` [0m
+  [4;36;1mAsesor Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+Completed in 38ms (View: 26, DB: 3) | 200 OK [http://localhost/asesors.xml]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index to xml (for 127.0.0.1 at 2010-05-31 18:40:39) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"noticias"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mNoticia Load (0.3ms)[0m   [0;1mSELECT * FROM `noticias` [0m
+  [4;35;1mNoticia Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 87ms (View: 4, DB: 3) | 200 OK [http://localhost/noticias.xml]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 18:12:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-14 18:12:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 114ms (View: 112, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-14 18:12:53) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"HJxOTB4rynAwULhTRJjWfxy6yGpiHwimXnzRYeZxEhc=", "controller"=>"sessions", "login"=>"administrador", "password"=>"[FILTERED]"}
+  [4;35;1mUser Columns (98.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'administrador') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'administrador') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 254ms (View: 3, DB: 100) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-14 18:13:06) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"HJxOTB4rynAwULhTRJjWfxy6yGpiHwimXnzRYeZxEhc=", "controller"=>"sessions", "login"=>"admin", "password"=>"[FILTERED]"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 13ms (DB: 2) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 18:13:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mAsesor Load (9.1ms)[0m   [0;1mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;35;1mAsesor Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+Completed in 66ms (View: 20, DB: 12) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-06-14 18:13:31) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mAsesor Load (0.2ms)[0m   [0mSELECT * FROM `asesors` [0m
+  [4;36;1mAsesor Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+Completed in 32ms (View: 17, DB: 6) | 200 OK [http://localhost/asesors.xml]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-06-14 18:14:38) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/asesors.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-14 18:14:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-06-14 18:15:10) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/asesors.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-14 18:15:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-06-14 18:15:40) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/asesors.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-14 18:15:40) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-06-14 18:15:41) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/asesors.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-14 18:15:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-06-14 18:15:42) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/asesors.xml]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-14 18:15:42) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index to xml (for 127.0.0.1 at 2010-06-14 18:20:45) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"noticias"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/noticias.xml]
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-14 18:20:46) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 2) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-06-14 18:20:46) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/asesors.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-14 18:20:46) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-06-14 18:20:59) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mAsesor Load (0.4ms)[0m   [0;1mSELECT * FROM `asesors` [0m
+  [4;35;1mAsesor Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+Completed in 23ms (View: 5, DB: 7) | 200 OK [http://localhost/asesors.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 19:00:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/]
+  [4;35;1mSQL (1.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-14 19:00:54) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 18ms (View: 17, DB: 1) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-06-14 19:01:00) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/asesors.xml]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-14 19:01:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-14 19:01:08) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-14 19:01:13) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"2JuuhwvZIZVgr16sWBHCAT4vYXYDIR7PpUtbqCLv9fM=", "controller"=>"sessions", "login"=>"admin", "password"=>"[FILTERED]"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/asesors.xml
+Completed in 16ms (DB: 2) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-06-14 19:01:13) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mAsesor Load (0.2ms)[0m   [0mSELECT * FROM `asesors` [0m
+  [4;36;1mAsesor Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+Completed in 23ms (View: 8, DB: 6) | 200 OK [http://localhost/asesors.xml]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-14 19:03:06) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 19:03:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;35;1mAsesor Load (0.3ms)[0m   [0mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;36;1mAsesor Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+Completed in 19ms (View: 11, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 19:03:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;36;1mAsesor Load (0.3ms)[0m   [0;1mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;35;1mAsesor Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+Completed in 13ms (View: 6, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#new (for 127.0.0.1 at 2010-06-14 19:03:15) [GET]
+  Parameters: {"action"=>"new", "controller"=>"asesors"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/asesors/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-14 19:03:15) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 19:03:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;35;1mAsesor Load (0.4ms)[0m   [0mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;36;1mAsesor Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+Completed in 14ms (View: 7, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 19:04:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;36;1mAsesor Load (0.3ms)[0m   [0;1mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;35;1mAsesor Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+Completed in 15ms (View: 7, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-06-14 19:05:02) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+  [4;35;1mAsesor Load (0.4ms)[0m   [0mSELECT * FROM `asesors` [0m
+  [4;36;1mAsesor Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/asesors.xml]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index to xml (for 127.0.0.1 at 2010-06-14 19:05:28) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"noticias"}
+  [4;36;1mNoticia Load (33.4ms)[0m   [0;1mSELECT * FROM `noticias` [0m
+  [4;35;1mNoticia Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 62ms (View: 5, DB: 35) | 200 OK [http://localhost/noticias.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index to xml (for 127.0.0.1 at 2010-06-14 19:05:29) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"noticias"}
+  [4;35;1mNoticia Load (0.3ms)[0m   [0mSELECT * FROM `noticias` [0m
+  [4;36;1mNoticia Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 3, DB: 2) | 200 OK [http://localhost/noticias.xml]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index to xml (for 127.0.0.1 at 2010-06-14 19:05:36) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"noticias"}
+  [4;36;1mNoticia Load (0.3ms)[0m   [0;1mSELECT * FROM `noticias` [0m
+  [4;35;1mNoticia Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 11ms (View: 4, DB: 3) | 200 OK [http://localhost/noticias.xml]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index to xml (for 127.0.0.1 at 2010-06-14 19:05:53) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"noticias"}
+  [4;35;1mNoticia Load (0.3ms)[0m   [0mSELECT * FROM `noticias` [0m
+  [4;36;1mNoticia Columns (5.8ms)[0m   [0;1mSHOW FIELDS FROM `noticias`[0m
+Completed in 15ms (View: 4, DB: 6) | 200 OK [http://localhost/noticias.xml]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index to xml (for 127.0.0.1 at 2010-06-14 19:05:54) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"noticias"}
+  [4;36;1mNoticia Load (0.4ms)[0m   [0;1mSELECT * FROM `noticias` [0m
+  [4;35;1mNoticia Columns (42.3ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 52ms (View: 4, DB: 43) | 200 OK [http://localhost/noticias.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-06-14 19:05:54) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+  [4;35;1mAsesor Load (0.3ms)[0m   [0mSELECT * FROM `asesors` [0m
+  [4;36;1mAsesor Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+Completed in 21ms (View: 4, DB: 2) | 200 OK [http://localhost/asesors.xml]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index to xml (for 127.0.0.1 at 2010-06-14 19:06:22) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"noticias"}
+  [4;36;1mNoticia Load (0.4ms)[0m   [0;1mSELECT * FROM `noticias` [0m
+  [4;35;1mNoticia Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 12ms (View: 4, DB: 2) | 200 OK [http://localhost/noticias.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index to xml (for 127.0.0.1 at 2010-06-14 19:06:27) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"asesors"}
+  [4;35;1mAsesor Load (0.6ms)[0m   [0mSELECT * FROM `asesors` [0m
+  [4;36;1mAsesor Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+Completed in 12ms (View: 5, DB: 2) | 200 OK [http://localhost/asesors.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (9.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (14.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAsesors (20100528004621)
+Migrating to CreateUsers (20100528004742)
+Migrating to CreateNoticias (20100529172559)
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Table 'noticias' already exists: CREATE TABLE `noticias` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `contenido` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (57.0ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `schema_migrations`[0m
+  [4;36;1mSQL (196.8ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAsesors (20100528004621)
+  [4;35;1mSQL (132.4ms)[0m   [0mCREATE TABLE `asesors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nombre` varchar(255), `tel` varchar(255), `cel` varchar(255), `puesto` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100528004621')[0m
+Migrating to CreateUsers (20100528004742)
+  [4;35;1mSQL (107.7ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `username` varchar(255), `email` varchar(255), `password_hash` varchar(255), `password_salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100528004742')[0m
+Migrating to CreateNoticias (20100529172559)
+  [4;35;1mSQL (109.8ms)[0m   [0mCREATE TABLE `noticias` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `contenido` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100529172559')[0m
+Migrating to AddAttachmentsImagenToAsesor (20100615000907)
+  [4;35;1mSQL (99.8ms)[0m   [0mALTER TABLE `asesors` ADD `imagen_file_name` varchar(255)[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mALTER TABLE `asesors` ADD `imagen_content_type` varchar(255)[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mALTER TABLE `asesors` ADD `imagen_file_size` int(11)[0m
+  [4;36;1mSQL (111.6ms)[0m   [0;1mALTER TABLE `asesors` ADD `imagen_updated_at` datetime[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100615000907')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `asesors`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `asesors`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `noticias`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `noticias`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `noticias`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAsesors (20100528004621)
+Migrating to CreateUsers (20100528004742)
+Migrating to CreateNoticias (20100529172559)
+Migrating to AddAttachmentsImagenToAsesor (20100615000907)
+Migrating to DefaultUser (20100615001322)
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'gize') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'gize@admin.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`created_at`, `updated_at`, `username`, `password_salt`, `password_hash`, `email`) VALUES('2010-06-15 00:14:49', '2010-06-15 00:14:49', 'gize', '233b3c8bf0d94fa9ee874c43545c17c81eb048bf', 'b83d1ea9574bc07c48bdabad086309f17c459130', 'gize@admin.com')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100615001322')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `asesors`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `asesors`[0m
+  [4;36;1mSQL (11.3ms)[0m   [0;1mSHOW FIELDS FROM `noticias`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `noticias`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW KEYS FROM `noticias`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 19:18:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;35;1mAsesor Load (0.4ms)[0m   [0mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+Completed in 22ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#new (for 127.0.0.1 at 2010-06-14 19:18:49) [GET]
+  Parameters: {"action"=>"new", "controller"=>"asesors"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mAsesor Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+Rendering template within layouts/application
+Rendering asesors/new
+Rendered asesors/_form (130.6ms)
+Completed in 173ms (View: 156, DB: 4) | 200 OK [http://localhost/asesors/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 19:18:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;35;1mAsesor Load (0.3ms)[0m   [0mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/asesors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index (for 127.0.0.1 at 2010-06-14 19:18:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"noticias"}
+  [4;35;1mNoticia Load (0.5ms)[0m   [0mSELECT * FROM `noticias` [0m
+Rendering template within layouts/application
+Rendering noticias/index
+Completed in 689ms (View: 682, DB: 1) | 200 OK [http://localhost/noticias]
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#new (for 127.0.0.1 at 2010-06-14 19:19:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"noticias"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mNoticia Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Rendering template within layouts/application
+Rendering noticias/new
+Rendered noticias/_form (14.3ms)
+Completed in 69ms (View: 54, DB: 7) | 200 OK [http://localhost/noticias/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index (for 127.0.0.1 at 2010-06-14 19:19:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"noticias"}
+  [4;35;1mNoticia Load (0.3ms)[0m   [0mSELECT * FROM `noticias` [0m
+Rendering template within layouts/application
+Rendering noticias/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/noticias]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-14 19:19:08) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 19:19:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;36;1mAsesor Load (0.3ms)[0m   [0;1mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 19:19:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;36;1mAsesor Load (0.4ms)[0m   [0;1mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#new (for 127.0.0.1 at 2010-06-14 19:19:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"asesors"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/asesors/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-14 19:19:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-14 19:19:19) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"HJxOTB4rynAwULhTRJjWfxy6yGpiHwimXnzRYeZxEhc=", "controller"=>"sessions", "login"=>"gize", "password"=>"[FILTERED]"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'gize') LIMIT 1[0m
+Redirected to http://localhost:3000/asesors/new
+Completed in 19ms (DB: 3) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#new (for 127.0.0.1 at 2010-06-14 19:19:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"asesors"}
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (3.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mAsesor Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+Rendering template within layouts/application
+Rendering asesors/new
+Rendered asesors/_form (9.5ms)
+Completed in 34ms (View: 12, DB: 10) | 200 OK [http://localhost/asesors/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#create (for 127.0.0.1 at 2010-06-14 19:19:37) [POST]
+  Parameters: {"asesor"=>{"nombre"=>"yo", "puesto"=>"el patron", "id"=>"593frkri4o", "tel"=>"4772029722", "cel"=>"4772029722"}, "commit"=>"Aceptar", "action"=>"create", "authenticity_token"=>"HJxOTB4rynAwULhTRJjWfxy6yGpiHwimXnzRYeZxEhc=", "controller"=>"asesors"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mAsesor Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAsesor Create (0.3ms)[0m   [0mINSERT INTO `asesors` (`created_at`, `nombre`, `updated_at`, `imagen_content_type`, `imagen_file_name`, `imagen_file_size`, `tel`, `puesto`, `imagen_updated_at`, `cel`) VALUES('2010-06-15 00:19:37', 'yo', '2010-06-15 00:19:37', NULL, NULL, NULL, '4772029722', 'el patron', NULL, '4772029722')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/asesors/1
+Completed in 21ms (DB: 5) | 302 Found [http://localhost/asesors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#show (for 127.0.0.1 at 2010-06-14 19:19:37) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"asesors"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mAsesor Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+  [4;35;1mAsesor Load (1.3ms)[0m   [0mSELECT * FROM `asesors` WHERE (`asesors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering asesors/show
+Completed in 50ms (View: 35, DB: 5) | 200 OK [http://localhost/asesors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 19:19:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;35;1mAsesor Load (0.3ms)[0m   [0mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;36;1mAsesor Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+Completed in 14ms (View: 7, DB: 2) | 200 OK [http://localhost/asesors]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 19:21:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;36;1mAsesor Load (0.4ms)[0m   [0;1mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;35;1mAsesor Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+Completed in 16ms (View: 9, DB: 2) | 200 OK [http://localhost/asesors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#edit (for 127.0.0.1 at 2010-06-14 19:22:00) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"asesors"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mAsesor Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+  [4;36;1mAsesor Load (1.0ms)[0m   [0;1mSELECT * FROM `asesors` WHERE (`asesors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering asesors/edit
+
+ActionView::TemplateError (undefined method `data_field' for #<ActionView::Helpers::FormBuilder:0x10367b250>) on line #25 of app/views/asesors/_form.html.erb:
+22:   </p>
+23:     <p>
+24:     <%= f.label "Imagen" %><br />
+25:     <%= f.data_field :imagen %>
+26:   </p>
+27:   <p><%= f.submit :Aceptar %></p>
+28: <% end %>
+
+    app/views/asesors/_form.html.erb:25
+    app/views/asesors/_form.html.erb:1
+    app/views/asesors/edit.html.erb:3
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#edit (for 127.0.0.1 at 2010-06-14 19:22:33) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"asesors"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mAsesor Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+  [4;35;1mAsesor Load (4.6ms)[0m   [0mSELECT * FROM `asesors` WHERE (`asesors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering asesors/edit
+Rendered asesors/_form (113.9ms)
+Completed in 141ms (View: 121, DB: 9) | 200 OK [http://localhost/asesors/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#update (for 127.0.0.1 at 2010-06-14 19:22:48) [PUT]
+  Parameters: {"asesor"=>{"imagen"=>#<File:/var/folders/B5/B53v0oEEGR88KXSxsg+50++++TI/-Tmp-/RackMultipart20100614-1859-1i9ifbk-0>, "nombre"=>"yo", "puesto"=>"el patron", "id"=>"1", "tel"=>"4772029722", "cel"=>"4772029722"}, "commit"=>"Aceptar", "action"=>"update", "_method"=>"put", "authenticity_token"=>"HJxOTB4rynAwULhTRJjWfxy6yGpiHwimXnzRYeZxEhc=", "id"=>"1", "controller"=>"asesors"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mAsesor Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+  [4;36;1mAsesor Load (1.4ms)[0m   [0;1mSELECT * FROM `asesors` WHERE (`asesors`.`id` = 1) [0m
+WARNING: Can't mass-assign these protected attributes: imagen, id
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/asesors/1
+Completed in 20ms (DB: 6) | 302 Found [http://localhost/asesors/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#show (for 127.0.0.1 at 2010-06-14 19:22:48) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"asesors"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mAsesor Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+  [4;35;1mAsesor Load (0.2ms)[0m   [0mSELECT * FROM `asesors` WHERE (`asesors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering asesors/show
+Completed in 27ms (View: 6, DB: 3) | 200 OK [http://localhost/asesors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#show (for 127.0.0.1 at 2010-06-14 19:25:26) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"asesors"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+SyntaxError (/Users/gize/Desktop/Kovi_todo/kovi/administrador/app/models/asesor.rb:5: syntax error, unexpected tASSOC, expecting kEND
+:url => "/imagenes/:id/:style.:extension",
+       ^
+/Users/gize/Desktop/Kovi_todo/kovi/administrador/app/models/asesor.rb:5: syntax error, unexpected ',', expecting kEND):
+  app/controllers/asesors_controller.rb:12:in `show'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (113.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#show (for 127.0.0.1 at 2010-06-14 19:25:35) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"asesors"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mAsesor Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mAsesor Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x10347aff0>):
+  app/models/asesor.rb:3
+  app/controllers/asesors_controller.rb:12:in `show'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#show (for 127.0.0.1 at 2010-06-14 19:26:07) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"asesors"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mAsesor Columns (5.4ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+  [4;36;1mAsesor Load (1.2ms)[0m   [0;1mSELECT * FROM `asesors` WHERE (`asesors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering asesors/show
+Completed in 42ms (View: 20, DB: 9) | 200 OK [http://localhost/asesors/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 19:26:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;36;1mAsesor Load (0.4ms)[0m   [0;1mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;35;1mAsesor Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+Completed in 20ms (View: 13, DB: 2) | 200 OK [http://localhost/asesors]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#edit (for 127.0.0.1 at 2010-06-14 19:26:17) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"asesors"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mAsesor Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+  [4;36;1mAsesor Load (1.7ms)[0m   [0;1mSELECT * FROM `asesors` WHERE (`asesors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering asesors/edit
+Rendered asesors/_form (11.2ms)
+Completed in 37ms (View: 21, DB: 6) | 200 OK [http://localhost/asesors/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#update (for 127.0.0.1 at 2010-06-14 19:26:23) [PUT]
+  Parameters: {"asesor"=>{"imagen"=>#<File:/var/folders/B5/B53v0oEEGR88KXSxsg+50++++TI/-Tmp-/RackMultipart20100614-1944-1ikztz6-0>, "nombre"=>"yo", "puesto"=>"el patron", "id"=>"1", "tel"=>"4772029722", "cel"=>"4772029722"}, "commit"=>"Aceptar", "action"=>"update", "_method"=>"put", "authenticity_token"=>"HJxOTB4rynAwULhTRJjWfxy6yGpiHwimXnzRYeZxEhc=", "id"=>"1", "controller"=>"asesors"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mAsesor Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+  [4;35;1mAsesor Load (1.5ms)[0m   [0mSELECT * FROM `asesors` WHERE (`asesors`.`id` = 1) [0m
+WARNING: Can't mass-assign these protected attributes: id
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/B5/B53v0oEEGR88KXSxsg+50++++TI/-Tmp-/stream20100614-1944-8zfecg-0 is not recognized by the 'identify' command.>
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering asesors/edit
+Rendered asesors/_form (12.3ms)
+Completed in 55ms (View: 16, DB: 6) | 200 OK [http://localhost/asesors/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-14 19:26:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;35;1mAsesor Load (0.4ms)[0m   [0mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;36;1mAsesor Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+Completed in 121ms (View: 8, DB: 2) | 200 OK [http://localhost/asesors]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-16 18:10:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;35;1mAsesor Load (30.2ms)[0m   [0mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;36;1mAsesor Columns (143.6ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+Completed in 276ms (View: 85, DB: 174) | 200 OK [http://localhost/]
+  [4;35;1mSQL (3.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index (for 127.0.0.1 at 2010-06-16 18:10:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"noticias"}
+  [4;36;1mNoticia Load (29.9ms)[0m   [0;1mSELECT * FROM `noticias` [0m
+Rendering template within layouts/application
+Rendering noticias/index
+Completed in 64ms (View: 17, DB: 34) | 200 OK [http://localhost/noticias]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#new (for 127.0.0.1 at 2010-06-16 18:10:18) [GET]
+  Parameters: {"action"=>"new", "controller"=>"noticias"}
+Redirected to http://localhost:4000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/noticias/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-16 18:10:18) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 91ms (View: 89, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-06-16 18:10:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;36;1mAsesor Load (0.3ms)[0m   [0;1mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;35;1mAsesor Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `asesors`[0m
+Completed in 15ms (View: 8, DB: 2) | 200 OK [http://localhost/asesors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index (for 127.0.0.1 at 2010-06-16 18:10:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"noticias"}
+  [4;35;1mNoticia Load (0.3ms)[0m   [0mSELECT * FROM `noticias` [0m
+Rendering template within layouts/application
+Rendering noticias/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/noticias]

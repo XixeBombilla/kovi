@@ -13,16 +13,62 @@
     
   <!--</asesor>-->
   
-    <asesor>
+  <asesor>
     
-    <imagen></imagen>
-    <nombre></nombre>
-    <tel></tel>
-    <cel></cel>
-    <id></id>
-    <puesto></puesto>
+    <imagen>imgAsesores/02.jpg</imagen>
+    <nombre>Carmen Orozco</nombre>
+    <tel>Tel: 0444771790106</tel>
+    <cel>Cel: 3251140</cel>
+    <id>ID: 72*617070*6</id>
+    <puesto>Asesor Kovi</puesto>
     
   </asesor>
+  
+   <asesor>
+    
+    <imagen>imgAsesores/01.jpg</imagen>
+    <nombre>Lourdes Garcia Cuellar</nombre>
+    <tel>Tel: 7784310</tel>
+    <cel>Cel: 3266989</cel>
+    <id>ID: 62*11*4023</id>
+    <puesto>Asesor Kovi</puesto>
+    
+  </asesor>
+   
+  <asesor>
+    
+    <imagen>imgAsesores/03.jpg</imagen>
+    <nombre>Ma. de la Luz Orozco Castellanos</nombre>
+    <tel>Tel: 7722442</tel>
+    <cel>Cel: 2412060</cel>
+    <id>ID: 62*15*42748</id>
+    <puesto>Asesor Kovi</puesto>
+    
+  </asesor>
+     
+  <asesor>
+    
+    <imagen>imgAsesores/04.jpg</imagen>
+    <nombre>Ma. de la Luz Cervantes Espinoza </nombre>
+    <tel>Tel: 1039141</tel>
+    <cel>Cel: 2077092</cel>
+    <id>--</id>
+    <puesto>Asesor Kovi</puesto>
+    
+  </asesor>
+     
+  <asesor>
+    
+    <imagen>imgAsesores/05.jpg</imagen>
+    <nombre>Aurora Orozco Castellanos (YOYA)</nombre>
+    <tel>Tel: 7413615</tel>
+    <cel>Cel: 1422675</cel>
+    <id>ID: 62*15*76173</id>
+    <puesto>Asesor Kovi</puesto>
+    
+  </asesor>
+       
+ 
   
 </asesores>
 

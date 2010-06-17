@@ -1,3 +1,8 @@
 class Asesor < ActiveRecord::Base
-  attr_accessible :nombre, :tel, :cel, :id, :puesto
+
+has_attached_file :imagen, :styles => {:thumb => "100x100#"},
+
+:url => "/imagenes/:id/:style.:extension",
+       :path => ":rails_root/public/imagenes/:id/:style.:extension"
+ 
 end
