@@ -11,11 +11,24 @@
   
   <noticia>
     
-    <contenido>Sabías que?</contenido>
+    <contenido>Una decoración de la casa pesada
+    y recargada de objetos obstaculiza el flujo del Chi.
+    La decoración del dormitorio debe ser ligera y sin
+    espejos para dormir bien</contenido>
     <imagen>imgNoticias/01.jpg</imagen>
     
   </noticia>
   
+   <noticia>
+    
+    <contenido>La decoración pesada y recargada de objetos
+    obstaculiza el flujo del Chi. No estamos sugiriendo
+    que decore su casa con el estilo minimalista, sino
+    que aligere su decoración, despeje las áreas para
+    ayudar el flujo del chi. </contenido>
+    <imagen>imgNoticias/01.jpg</imagen>
+    
+  </noticia>
  
 </noticias>
 
