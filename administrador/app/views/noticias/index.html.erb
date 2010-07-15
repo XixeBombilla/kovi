@@ -12,7 +12,7 @@
   <% for noticia in @noticias %>
     <tr>
       <td><%=h noticia.contenido %></td>
-	<td> <%= image_tag noticia.imagen.url(:thumb) %></td>
+	<td> <%= image_tag noticia.imagen.url %></td>
       <td><%= link_to "Mostrar", noticia %></td>
       <td><%= link_to "Editar", edit_noticia_path(noticia) %></td>
       <td><%= link_to "Eliminar", noticia, :confirm => 'Esta Seguro?', :method => :delete %></td>

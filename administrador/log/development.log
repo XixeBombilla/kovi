@@ -7300,3 +7300,173 @@ Rendering template within layouts/application
 Rendering noticias/index
   [4;35;1mNoticia Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
 Completed in 36ms (View: 21, DB: 4) | 200 OK [http://localhost/noticias]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index to xml (for 127.0.0.1 at 2010-07-15 18:27:08) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"noticias"}
+  [4;35;1mNoticia Load (0.7ms)[0m   [0mSELECT * FROM `noticias` [0m
+  [4;36;1mNoticia Columns (27.3ms)[0m   [0;1mSHOW FIELDS FROM `noticias`[0m
+Completed in 69ms (View: 29, DB: 28) | 200 OK [http://localhost/noticias.xml]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index (for 127.0.0.1 at 2010-07-15 18:27:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"noticias"}
+  [4;36;1mNoticia Load (0.6ms)[0m   [0;1mSELECT * FROM `noticias` [0m
+Rendering template within layouts/application
+Rendering noticias/index
+  [4;35;1mNoticia Columns (6.8ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 84ms (View: 59, DB: 8) | 200 OK [http://localhost/noticias]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#1 to jpg (for 127.0.0.1 at 2010-07-15 18:27:14) [GET]
+  Parameters: {"1279232269"=>nil, "format"=>"jpg", "action"=>"1", "id"=>"thumb", "controller"=>"noticias"}
+  [4;35;1mUser Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, current_user, destroy, edit, index, logged_in?, login_required, new, redirect_to_target_or_default, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#3 to jpg (for 127.0.0.1 at 2010-07-15 18:27:15) [GET]
+  Parameters: {"format"=>"jpg", "action"=>"3", "id"=>"thumb", "controller"=>"noticias", "1279234503"=>nil}
+  [4;36;1mUser Columns (4.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionController::UnknownAction (No action responded to 3. Actions: create, current_user, destroy, edit, index, logged_in?, login_required, new, redirect_to_target_or_default, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-07-15 18:28:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;35;1mAsesor Load (0.7ms)[0m   [0mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;36;1mAsesor Columns (38.5ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+Completed in 117ms (View: 38, DB: 39) | 200 OK [http://localhost/asesors]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index (for 127.0.0.1 at 2010-07-15 18:29:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"noticias"}
+  [4;36;1mNoticia Load (0.8ms)[0m   [0;1mSELECT * FROM `noticias` [0m
+Rendering template within layouts/application
+Rendering noticias/index
+  [4;35;1mNoticia Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 35ms (View: 19, DB: 4) | 200 OK [http://localhost/noticias]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#1 to jpg (for 127.0.0.1 at 2010-07-15 18:29:00) [GET]
+  Parameters: {"1279232269"=>nil, "format"=>"jpg", "action"=>"1", "id"=>"thumb", "controller"=>"noticias"}
+  [4;35;1mUser Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, current_user, destroy, edit, index, logged_in?, login_required, new, redirect_to_target_or_default, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#3 to jpg (for 127.0.0.1 at 2010-07-15 18:29:00) [GET]
+  Parameters: {"format"=>"jpg", "action"=>"3", "id"=>"thumb", "controller"=>"noticias", "1279234503"=>nil}
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionController::UnknownAction (No action responded to 3. Actions: create, current_user, destroy, edit, index, logged_in?, login_required, new, redirect_to_target_or_default, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#edit (for 127.0.0.1 at 2010-07-15 18:29:56) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"noticias"}
+  [4;35;1mUser Columns (6.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mNoticia Columns (6.5ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+  [4;36;1mNoticia Load (1.9ms)[0m   [0;1mSELECT * FROM `noticias` WHERE (`noticias`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering noticias/edit
+Rendered noticias/_form (28.2ms)
+Completed in 105ms (View: 60, DB: 16) | 200 OK [http://localhost/noticias/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#update (for 127.0.0.1 at 2010-07-15 18:30:03) [PUT]
+  Parameters: {"commit"=>"Aceptar", "action"=>"update", "_method"=>"put", "authenticity_token"=>"cOJ9DquHz9OASOKNAj/L6/74wPcptzOydmU+O1bWJuQ=", "id"=>"1", "controller"=>"noticias", "noticia"=>{"imagen"=>#<File:/var/folders/ro/rol7TRADEue8Y+mxOkAxjE+++TI/-Tmp-/RackMultipart.715.0>, "contenido"=>"Una decoración de la casa pesada y recargada de objetos obstaculiza el flujo del Chi. La decoración del dormitorio debe ser ligera y sin espejos para dormir bien "}}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mNoticia Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `noticias`[0m
+  [4;35;1mNoticia Load (1.4ms)[0m   [0mSELECT * FROM `noticias` WHERE (`noticias`.`id` = 1) [0m
+[paperclip] identify '-format' '%wx%h' '/var/folders/ro/rol7TRADEue8Y+mxOkAxjE+++TI/-Tmp-/stream,715,0.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/ro/rol7TRADEue8Y+mxOkAxjE+++TI/-Tmp-/stream,715,0.jpg[0]' '-resize' '100x' '-crop' '100x100+0+19' '+repage' '/var/folders/ro/rol7TRADEue8Y+mxOkAxjE+++TI/-Tmp-/stream,715,0,715,0' 2>/dev/null
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mNoticia Update (0.7ms)[0m   [0mUPDATE `noticias` SET `imagen_updated_at` = '2010-07-15 23:30:03', `imagen_file_name` = 'peinado_pelo_largo_9.jpg', `imagen_file_size` = 91170, `updated_at` = '2010-07-15 23:30:04' WHERE `id` = 1[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/gize/Desktop/PENDIENTES/kovi/administrador/public/noticias/1/thumb.jpg
+[paperclip] saving /Users/gize/Desktop/PENDIENTES/kovi/administrador/public/noticias/1/original.jpg
+  [4;36;1mSQL (22.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/noticias/1
+Completed in 794ms (DB: 32) | 302 Found [http://localhost/noticias/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#show (for 127.0.0.1 at 2010-07-15 18:30:04) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"noticias"}
+  [4;36;1mUser Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mNoticia Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `noticias`[0m
+  [4;35;1mNoticia Load (0.5ms)[0m   [0mSELECT * FROM `noticias` WHERE (`noticias`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering noticias/show
+Completed in 58ms (View: 29, DB: 7) | 200 OK [http://localhost/noticias/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index (for 127.0.0.1 at 2010-07-15 18:30:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"noticias"}
+  [4;35;1mNoticia Load (0.7ms)[0m   [0mSELECT * FROM `noticias` [0m
+Rendering template within layouts/application
+Rendering noticias/index
+  [4;36;1mNoticia Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `noticias`[0m
+Completed in 45ms (View: 30, DB: 4) | 200 OK [http://localhost/noticias]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#3 to jpg (for 127.0.0.1 at 2010-07-15 18:30:09) [GET]
+  Parameters: {"format"=>"jpg", "action"=>"3", "id"=>"original", "controller"=>"noticias", "1279234503"=>nil}
+  [4;36;1mUser Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionController::UnknownAction (No action responded to 3. Actions: create, current_user, destroy, edit, index, logged_in?, login_required, new, redirect_to_target_or_default, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AsesorsController#index (for 127.0.0.1 at 2010-07-15 18:30:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"asesors"}
+  [4;35;1mAsesor Load (0.7ms)[0m   [0mSELECT * FROM `asesors` [0m
+Rendering template within layouts/application
+Rendering asesors/index
+  [4;36;1mAsesor Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `asesors`[0m
+Completed in 48ms (View: 32, DB: 4) | 200 OK [http://localhost/asesors]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index to xml (for 127.0.0.1 at 2010-07-15 18:32:10) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"noticias"}
+  [4;36;1mNoticia Load (0.9ms)[0m   [0;1mSELECT * FROM `noticias` [0m
+  [4;35;1mNoticia Columns (23.3ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 50ms (View: 14, DB: 24) | 200 OK [http://localhost/noticias.xml]

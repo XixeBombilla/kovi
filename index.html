@@ -30,10 +30,10 @@
       xhttpN=new ActiveXObject("Microsoft.XMLHTTP");
       xhttpA=new ActiveXObject("Microsoft.XMLHTTP");
       }
-    xhttpN.open("GET","http://administrador.inmobiliariakovi.com/noticias.xml",false);//cambio
+    xhttpN.open("GET","xml/noticias.xml",false);//cambio
     xhttpN.send("");
     xmlDocN=xhttpN.responseXML;
-    xhttpA.open("GET","http://administrador.inmobiliariakovi.com/asesors.xml",false);
+    xhttpA.open("GET","xml/asesores.xml",false);
     xhttpA.send("");
     xmlDocA=xhttpA.responseXML;
     
@@ -57,12 +57,12 @@
     
     function displayA()
     {
-     nombre=(y[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue);
-     tel=(y[i].getElementsByTagName("tel")[0].childNodes[0].nodeValue);
-     cel=(y[i].getElementsByTagName("cel")[0].childNodes[0].nodeValue);
-     id=(y[i].getElementsByTagName("id")[0].childNodes[0].nodeValue);
-     puesto=(y[i].getElementsByTagName("puesto")[0].childNodes[0].nodeValue);
-    imgA=(y[i].getElementsByTagName("imagen")[0].childNodes[0].nodeValue);
+     nombre=(y[a].getElementsByTagName("nombre")[0].childNodes[0].nodeValue);
+     tel=(y[a].getElementsByTagName("tel")[0].childNodes[0].nodeValue);
+     cel=(y[a].getElementsByTagName("cel")[0].childNodes[0].nodeValue);
+     id=(y[a].getElementsByTagName("id")[0].childNodes[0].nodeValue);
+     puesto=(y[a].getElementsByTagName("puesto")[0].childNodes[0].nodeValue);
+    imgA=(y[a].getElementsByTagName("imagen")[0].childNodes[0].nodeValue);
     txtA1= nombre +"<br/>"+ tel +"<br/>"+ cel +"<br/>"+ id +"<br/>"+ puesto;
     txtA= '<img src="'+ imgA +'"/>' ;
     document.getElementById("imagenAsesor").innerHTML=txtA;
@@ -91,18 +91,18 @@ if (i>0)
     
 function nextA()
 {
-if (i<y.length-1)
+if (a<y.length-1)
   {
-  i++;
+  a++;
   displayA();
   }
 }
 
 function previousA()
 {
-if (i>0)
+if (a>0)
   {
-  i--;
+  a--;
   displayA();
   }
 }
