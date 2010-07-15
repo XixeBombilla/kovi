@@ -2,8 +2,8 @@ class Noticia < ActiveRecord::Base
   
   has_attached_file :imagen, :styles => {:thumb => "100x100#"},
 
-  :url => "/imagenesNoticias/:id/:style.:extension",
-         :path => ":rails_root/public/imagenesNoticias/:id/:style.:extension"
+  :url => "/noticias/:id/:style.:extension",
+         :path => ":rails_root/public/noticias/:id/:style.:extension"
          def url(*args)
            data.url(*args)
          end

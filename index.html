@@ -30,10 +30,10 @@
       xhttpN=new ActiveXObject("Microsoft.XMLHTTP");
       xhttpA=new ActiveXObject("Microsoft.XMLHTTP");
       }
-    xhttpN.open("GET","noticias.xml",false);//cambio
+    xhttpN.open("GET","http://administrador.inmobiliariakovi.com/noticias.xml",false);//cambio
     xhttpN.send("");
     xmlDocN=xhttpN.responseXML;
-    xhttpA.open("GET","asesors.xml",false);
+    xhttpA.open("GET","http://administrador.inmobiliariakovi.com/asesors.xml",false);
     xhttpA.send("");
     xmlDocA=xhttpA.responseXML;
     
