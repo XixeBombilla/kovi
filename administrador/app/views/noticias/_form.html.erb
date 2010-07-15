@@ -1,8 +1,12 @@
-<% form_for @noticia do |f| %>
+<% form_for(@noticia, :html => {:multipart => true}) do |f| %>
   <%= f.error_messages %>
   <p>
     <%= f.label :contenido %><br />
-    <%= f.text_field :contenido %>
+    <%= f.text_area :contenido %>
+  </p>
+  <p>
+    <%= f.label "Imagen" %><br />
+    <%= f.file_field :imagen %>
   </p>
   <p><%= f.submit:Aceptar %></p>
 <% end %>

@@ -14,13 +14,16 @@
 </p>
 <p>
   <strong>Id-Nextel:</strong>
-  <%=h @asesor.id %>
+  <%=h @asesor.nextel %>
 </p>
 <p>
   <strong>Puesto:</strong>
   <%=h @asesor.puesto %>
 </p>
-
+<p>
+  <strong>Imagen:</strong><br/>
+ <%= image_tag @asesor.imagen.url %>
+</p>
 <p>
   <%= link_to "Editar", edit_asesor_path(@asesor) %> |
   <%= link_to "Eliminar", @asesor, :confirm => 'Esta Seguro?', :method => :delete %> |

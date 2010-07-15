@@ -4,7 +4,11 @@
   <strong>Contenido:</strong>
   <%=h @noticia.contenido %>
 </p>
+<p>
+  <strong>Imagen:</strong><br/>
+ <%= image_tag @noticia.imagen.url(:thumb) %>
 
+</p>
 <p>
   <%= link_to "Editar", edit_noticia_path(@noticia) %> |
   <%= link_to "Eliminar", @noticia, :confirm => 'Esta Seguro?', :method => :delete %> |

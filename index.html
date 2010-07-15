@@ -30,10 +30,10 @@
       xhttpN=new ActiveXObject("Microsoft.XMLHTTP");
       xhttpA=new ActiveXObject("Microsoft.XMLHTTP");
       }
-    xhttpN.open("GET","xml/noticias.xml",false);//cambio
+    xhttpN.open("GET","noticias.xml",false);//cambio
     xhttpN.send("");
     xmlDocN=xhttpN.responseXML;
-    xhttpA.open("GET","xml/asesores.xml",false);
+    xhttpA.open("GET","asesors.xml",false);
     xhttpA.send("");
     xmlDocA=xhttpA.responseXML;
     
@@ -48,7 +48,7 @@
     {
     
     nota=(x[i].getElementsByTagName("contenido")[0].childNodes[0].nodeValue);
-    imgN=(x[i].getElementsByTagName("imagen")[0].childNodes[0].nodeValue);
+    imgN=(x[i].getElementsByTagName("imagen-file-name")[0].childNodes[0].nodeValue);
     txtN1= nota ;
     txtN= '<img src="'+ imgN +'"/>' ;
     document.getElementById("imagenNoticia").innerHTML=txtN;
@@ -62,7 +62,7 @@
      cel=(y[i].getElementsByTagName("cel")[0].childNodes[0].nodeValue);
      id=(y[i].getElementsByTagName("id")[0].childNodes[0].nodeValue);
      puesto=(y[i].getElementsByTagName("puesto")[0].childNodes[0].nodeValue);
-    imgA=(y[i].getElementsByTagName("imagen")[0].childNodes[0].nodeValue);
+    imgA=(y[i].getElementsByTagName("imagen-file-name")[0].childNodes[0].nodeValue);
     txtA1= nombre +"<br/>"+ tel +"<br/>"+ cel +"<br/>"+ id +"<br/>"+ puesto;
     txtA= '<img src="'+ imgA +'"/>' ;
     document.getElementById("imagenAsesor").innerHTML=txtA;

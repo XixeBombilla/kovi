@@ -4,10 +4,15 @@
 <table border=1; style="border:solid;">
   <tr>
     <th>Contenido</th>
+	<th>Imagen</th>
+	<th>Mostrar</th>
+	<th>Editar</th>	
+	<th>Eliminar</th>
   </tr>
   <% for noticia in @noticias %>
     <tr>
       <td><%=h noticia.contenido %></td>
+	<td> <%= image_tag noticia.imagen.url %></td>
       <td><%= link_to "Mostrar", noticia %></td>
       <td><%= link_to "Editar", edit_noticia_path(noticia) %></td>
       <td><%= link_to "Eliminar", noticia, :confirm => 'Esta Seguro?', :method => :delete %></td>

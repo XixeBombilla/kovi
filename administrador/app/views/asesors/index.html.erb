@@ -10,14 +10,19 @@
     <th>Celular</th>
     <th>Id-Nextel</th>
     <th>Puesto</th>
+ 	<th>Imagen</th>
+ 	<th>Mostrar</th>
+	<th>Editar</th>	
+	<th>Eliminar</th>
   </tr>
   <% for asesor in @asesors %>
     <tr>
       <td><%=h asesor.nombre %></td>
       <td><%=h asesor.tel %></td>
       <td><%=h asesor.cel %></td>
-      <td><%=h asesor.id %></td>
+      <td><%=h asesor.nextel %></td>
       <td><%=h asesor.puesto %></td>
+      <td> <%= image_tag asesor.imagen.url %></td>
       <td><%= link_to "Mostrar", asesor %></td>
       <td><%= link_to "Editar", edit_asesor_path(asesor) %></td>
       <td><%= link_to "Eliminar", asesor, :confirm => 'Esta Seguro?', :method => :delete %></td>
